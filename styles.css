@@ -1,0 +1,272 @@
+/* General styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f5f7fa;
+}
+
+/* Container styles */
+.container {
+    max-width: 800px;
+    width: 90%;
+    background: #ffffff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* Header styles */
+.navbox {
+    width: 100%;
+    background-color: #ffffff;
+    padding: 10px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+}
+
+.nav-item {
+    margin: 0 15px;
+}
+
+.nav-link {
+    color: #333;
+    text-decoration: none;
+    font-size: 1.2em;
+    padding: 5px 10px;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+.nav-link:hover {
+    color: #fff;
+    background-color: #007bff;
+    border-radius: 5px;
+}
+
+.nav-toggle {
+    display: none;
+}
+
+.nav-toggle-label {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+/* Main content styles */
+h1, h2 {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 2em;
+}
+
+p {
+    line-height: 1.6em;
+    color: #666;
+    font-size: 1.2em;
+}
+
+.profile {
+    margin-bottom: 20px;
+}
+
+
+.goals {
+    background-color: #f9fbfd;
+    padding: 20px;
+    text-align: left;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.goals ul {
+    line-height: 2em;
+    list-style-type: disc;
+    margin-left: 20px;
+    font-size: 1.2em;
+}
+
+.links {
+    padding: 10px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.links a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s;
+    font-size: 1.2em;
+}
+
+.links a:hover {
+    color: #0056b3;
+}
+
+footer {
+    margin-top: 20px;
+    color: #999;
+    font-size: 1.2em;
+}
+
+/* Responsive design */
+
+/* Small devices (phones, 480px and down) */
+@media (max-width: 480px) {
+    .container {
+        padding: 15px;
+    }
+
+    .navbox {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    .nav-item {
+        margin: 10px 0;
+    }
+
+    .nav-toggle:checked ~ .nav-links {
+        display: flex;
+    }
+
+    .nav-toggle-label {
+        display: block;
+        color: #333;
+    }
+
+    .links {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+}
+
+/* Medium devices (tablets, 768px and down) */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    .navbox {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    .nav-item {
+        margin: 10px 0;
+    }
+
+    .nav-toggle:checked ~ .nav-links {
+        display: flex;
+    }
+
+    .nav-toggle-label {
+        display: block;
+        color: #333;
+    }
+
+    .links {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+}
+
+/* Large devices (desktops, 992px and down) */
+@media (max-width: 992px) {
+    .container {
+        width: 80%;
+    }
+
+    .nav-links {
+        justify-content: flex-end;
+    }
+
+    .nav-toggle {
+        display: none;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and down) */
+@media (max-width: 1200px) {
+    .container {
+        width: 70%;
+    }
+
+    .nav-links {
+        justify-content: flex-end;
+    }
+
+    .nav-toggle {
+        display: none;
+    }
+}
+
+/* Ultra-wide devices (large desktops, 1600px and up) */
+@media (min-width: 1600px) {
+    .container {
+        width: 60%;
+    }
+
+    .nav-links {
+        justify-content: flex-end;
+    }
+
+    .nav-toggle {
+        display: none;
+    }
+}

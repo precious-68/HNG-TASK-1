@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Tech Goals</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="navbox">
+        <nav class="navbar">
+            <input type="checkbox" id="nav-toggle" class="nav-toggle">
+            <label for="nav-toggle" class="nav-toggle-label">
+                <i class="fas fa-bars"></i>
+            </label>
+            <ul class="nav-links" >
+                <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Services</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="container" >
+        <div class="profile">
+            <h1>My Tech Goals for the Next 2 Years</h1>
+            <p data-testid="slackProfilePicture">Slack Profile Picture:</p>
+            <img src="./image/slack display name.png" alt="Slack Profile Picture" data-testid="slackProfilePicture">
+            <p data-testid="slackDisplayName">Slack Display Name: @ikegbo</p>
+            <p data-testid="slackEmail">Slack Email: Ikegboprecious2000@gmail.com</p>
+            <p data-testid="currentTimeUTC">Current Time (UTC): <span id="currentTime"></span></p>
+            <p data-testid="currentDay">Current Day: <span id="currentDay"></span></p>
+        </div>
+
+        <div class="goals">
+            <h2>Goals:</h2>
+            <ul>
+                <li>Master HTML, CSS, and JavaScript.</li>
+                <li>Build and deploy multiple web projects.</li>
+                <li>Learn a backend technology (e.g., Node.js, Python).</li>
+                <li>Contribute to open-source projects.</li>
+                <li>Secure an internship or junior developer role.</li>
+                <li>Improve problem-solving skills through coding challenges.</li>
+            </ul>
+        </div>
+        <div class="links" >
+            <a href="https://hng.tech/learn" data-testid="hngLink">Learn more at hng.tech</a>
+            <a href="https://keyword.dog" data-testid="keywordLink">Check out keyword.dog</a>
+            <a href="https://scrapeanyweb.site" data-testid="scrapeanywebLink">Visit scrapeanyweb.site</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 My Tech Goals</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
